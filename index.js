@@ -5,11 +5,8 @@ const http = require("http");
 const app = http.createServer(server);
 
 
-const port = 5000;
 
-
-
-app.listen(port, ()=>{console.log(`*** Runnig on port ${port}`)})
+app.listen(process.env.PORT, ()=>{console.log(`*** Runnig on port ${process.env.PORT}`)})
 
 server.use(express.static("public"));
 
