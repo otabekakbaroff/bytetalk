@@ -1,4 +1,4 @@
-let socket = io.connect('https://bytetalk.herokuapp.com/')
+let socket = io.connect('https://bytetalk.herokuapp.com')
 let chatbox = document.querySelector(".chat-box")
 
 

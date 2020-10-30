@@ -4,9 +4,9 @@ const socket = require("socket.io")
 const http = require("http");
 const app = http.createServer(server);
 
+const port = 5000
 
-
-app.listen(process.env.PORT, ()=>{console.log(`*** Runnig on port ${process.env.PORT}`)})
+app.listen(process.env.PORT || port, ()=>{console.log(`*** Runnig on port ${process.env.PORT || port}`)})
 
 server.use(express.static("public"));
 
